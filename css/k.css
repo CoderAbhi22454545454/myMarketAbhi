@@ -1,0 +1,24 @@
+.navbar .mainMenu a{
+    text-transform: uppercase;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     margin-left: 4vh;
+     position: relative;
+}
+
+.navbar .mainMenu a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    color:white;
+    height: 2px;
+    background: rgb(242, 237, 237);
+    transition: width .6s ease-in-out;
+}
+
+.navbar .mainMenu a:hover::after{
+
+    width:85%;
+}
